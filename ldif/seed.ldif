@@ -1,0 +1,7 @@
+dn: uid=joaosilva,ou=usuarios,dc=minhaempresa,dc=local
+objectClass: inetOrgPerson
+cn: joaosilva
+sn: Silva
+mail: joao.silva@minhaempresa.local
+uid: joaosilva
+userPassword: 123456
