@@ -1,0 +1,45 @@
+## Ignore para projetos Visual Studio/.NET
+
+# Build results
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+*.log
+
+# VS Code
+.vscode/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio
+.vs/
+
+# ASP.NET
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Rider
+.idea/
+
+# NUGET
+*.nupkg
+packages/
+*.snupkg
+
+# Backup & temp files
+*.tmp
+*.bak
+*.swp
+*.sln.cache
+
+# Configuration files
+appsettings.*.json
+
+# Publish folders
+publish/
