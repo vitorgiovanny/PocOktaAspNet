@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LIgOMNqHRh0=",
+  "dgSpecHash": "ukHT6FrsTH8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\vitor\\OneDrive\\Documentos\\OpahTi\\Carrefoul\\IAM - Identity And Access Management\\POC\\OKTA\\Web_Okta_SSO\\Web_Okta_SSO.csproj",
+  "projectFilePath": "C:\\Users\\vitor\\OneDrive\\Documentos\\OpahTi\\Carrefoul\\IAM - Identity And Access Management\\POC\\OKTA\\PocOktaAspNet\\src\\Web_Okta_SSO\\Web_Okta_SSO.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vitor\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.14\\microsoft.aspnetcore.authentication.jwtbearer.8.0.14.nupkg.sha512",
     "C:\\Users\\vitor\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\8.0.15\\microsoft.aspnetcore.authentication.openidconnect.8.0.15.nupkg.sha512",

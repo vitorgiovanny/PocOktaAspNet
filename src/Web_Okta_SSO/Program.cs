@@ -27,8 +27,6 @@ builder.Services.AddAuthentication(options =>
     options.Scope.Add("openid");
     options.Scope.Add("profile");
     options.Scope.Add("email");
-    //options.CallbackPath = "/Home/Index"; //"/signin-oidc";
-    //options.CallbackPath = "Home/Callback";
     options.CallbackPath = "/authorization-code/callback";
     options.Events = new OpenIdConnectEvents
 {
@@ -47,23 +45,7 @@ builder.Services.AddAuthentication(options =>
 };
 
 });
-//.AddOktaMvc(new OktaMvcOptions
-//{
-//    OktaDomain = builder.Configuration["Okta:Domain"],
-//    ClientId = builder.Configuration["Okta:ClientId"],
-//    ClientSecret = builder.Configuration["Okta:ClientSecret"],
-//    AuthorizationServerId = "default", // ou personalizado, se tiver
-//    CallbackPath = "/authorization-code/callback"
-//});
 
-var teste = new OktaMvcOptions
-{
-    OktaDomain = builder.Configuration["Okta:Domain"],
-    ClientId = builder.Configuration["Okta:ClientId"],
-    ClientSecret = builder.Configuration["Okta:ClientSecret"],
-    AuthorizationServerId = "default", // ou personalizado, se tiver
-    CallbackPath = builder.Configuration["Okta:RedirectUri"]
-};
 
 var app = builder.Build();
 
