@@ -14,3 +14,30 @@ Testar a integração entre:
 * Okta LDAP Agent (precisamos baixar e instalar)
 * [Opcional] Admin UI para o OpenLDAP, tipo o phpLDAPadmin
 
+### Fluxograma
+[Usuário acessa app]
+        |
+        v
+[Redirecionado para SSO (AKTO)]
+       |
+       v
+[Usuário digita login + senha no SSO]
+       |
+       v
+[SSO envia dados de login ao Agent LDAP]
+       |
+       v
+[Agent LDAP conecta no servidor LDAP]
+       |
+       v
+[Agent tenta fazer BIND com DN + senha]
+       |
+       v
+[LDAP responde]
+  |         \
+  |          \
+[Sucesso]   [Falha]
+   |            |
+   v            v
+[SSO cria sessão  ]     [SSO exibe erro de login]
+[Usuário autenticado]
