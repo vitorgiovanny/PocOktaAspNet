@@ -14,6 +14,34 @@ Testar a integração entre:
 * Okta LDAP Agent (precisamos baixar e instalar)
 * [Opcional] Admin UI para o OpenLDAP, tipo o phpLDAPadmin
 
+
+### 🐳 Docker Compose OpenLDAP
+
+
+##  
+
+Este `docker-compose.yml` inicia um container com OpenLDAP configurado com os seguintes parâmetros:
+
+- Organização: **MinhaEmpresa**
+- Domínio: **minhaempresa.local**
+- Senha do admin: **admin**
+
+```yaml
+version: '3.8'
+
+services:
+  openldap:
+    image: osixia/openldap:1.5.0
+    container_name: openldap
+    environment:
+      - LDAP_ORGANISATION=MinhaEmpresa
+      - LDAP_DOMAIN=minhaempresa.local
+      - LDAP_ADMIN_PASSWORD=admin
+      - KEEP_EXISTING_CONFIG="true"
+    ports:
+      - "389:389"
+```
+
+
 ### fluxograma da nossa P.O.C
 ![Alt ou título da imagem](img/fluxograma.png)
-
